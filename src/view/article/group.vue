@@ -11,7 +11,7 @@
   <ul class="ui-list">
     <li v-for="(article, index) in items" :key="index">
       <router-link :to="'/article/' + article.id">
-        <div class="thumb"><img :src="baseUrl + article.thumbnail" alt=""></div>
+        <div class="thumb"><img :src="article.thumbnail" alt=""></div>
         <div class="info">
           <h3>{{ article.title }}</h3>
           <div class="meta">
@@ -60,14 +60,13 @@ export default {
           $state.complete()
         }
       }).catch((error) => {
-        console.log(error)
+        window.console.log(error)
       })
     }
   },
   data () {
     return {
       title: '',
-      baseUrl: this.$http.defaults.baseURL,
       items: []
     }
   },

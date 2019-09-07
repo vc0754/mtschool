@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="account">
-    <div class="user-head" v-bind:style="{backgroundImage:'url(' + baseUrl + user.thumbnail + ')'}"></div>
+    <div class="user-head" v-bind:style="{backgroundImage:'url(' + user.thumbnail + ')'}"></div>
     <h1>{{ user.name }}</h1>
   </div>
 
@@ -86,7 +86,6 @@ export default {
   computed: mapState({ user: state => state.user }),
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL
     }
   }
 }

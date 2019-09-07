@@ -18,7 +18,7 @@ export default {
   actions: {
     [USER_SIGNIN] ({commit}, user) {
       var self = this._vm
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         var urlUser = '/user'
         self.$http.get(urlUser, {
           params: {
@@ -39,7 +39,7 @@ export default {
             resolve(ret)
           }
         }).catch((error) => {
-          console.log(error)
+          window.console.log(error)
           // reject(request.status)
         })
       })

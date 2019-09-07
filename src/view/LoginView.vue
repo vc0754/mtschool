@@ -51,7 +51,7 @@ export default {
       if (!this.form.phone || !this.form.vcode) return
       this.$store.dispatch('USER_SIGNIN', this.form).then((ret) => {
         if (ret.errcode) {
-          console.log(ret.errmsg)
+          window.console.log(ret.errmsg)
         } else {
           this.$router.replace({ path: '/app/home' })
         }

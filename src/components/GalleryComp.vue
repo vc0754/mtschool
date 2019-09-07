@@ -1,7 +1,7 @@
 <template>
 <ul :class="galleryClass" v-if="gallery.length">
   <li v-for="(thumb, index) in galleryShow" :key="index">
-    <div :style="{backgroundImage:'url(' + baseUrl + thumb + ')'}">
+    <div :style="{backgroundImage:'url(' + thumb + ')'}">
       <img :src="thumb">
     </div>
   </li>
@@ -14,7 +14,6 @@ export default {
   props: ['gallery'],
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL,
       galleryClass: 'gallery gallery' + (this.gallery.length > 9 ? 0 : this.gallery.length)
     }
   },

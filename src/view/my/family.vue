@@ -7,7 +7,6 @@
     <div slot="center">邀请家人</div>
   </navbar>
 </template>
-
 <script>
 import navbar from '@/view/ui/NavBar'
 export default {
@@ -22,7 +21,5 @@ export default {
   }
 }
 </script>
-
 <style lang="less" scoped>
-
 </style>

@@ -30,7 +30,6 @@ export default {
   },
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL
     }
   }
 }

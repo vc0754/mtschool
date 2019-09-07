@@ -6,7 +6,7 @@
 
   <div class="children">
     <div class="user-head">
-      <img :src="baseUrl + userHead">
+      <img :src="userHead">
     </div>
     <span>5岁8个月25日</span>
   </div>
@@ -50,13 +50,12 @@ export default {
           $state.complete()
         }
       }).catch((error) => {
-        console.log(error)
+        window.console.log(error)
       })
     }
   },
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL,
       items: [],
       userName: '蒂脉科技演示账号',
       userHead: '/static/images/users/b1.jpg'

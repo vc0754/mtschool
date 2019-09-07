@@ -1,30 +1,33 @@
-# mtschool
+# mytime_school_hybird_app
 
-> A Vue.js project
+# 脉享校园系统手机APP-家长版
 
-## Build Setup
+Description：该套文件使用 Vue Cli 3 工程创建，配合 Mock 数据模拟进行展示，使用到 Vue-Router，Vuex，Axios 等一系列组件。
 
-``` bash
-# install dependencies
+## Project setup
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

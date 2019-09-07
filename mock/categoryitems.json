@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "热点推荐",
+        "thumbnail": "/static/images/cat01.jpg"
+    },
+    {
+        "id": 2,
+        "title": "优雅首饰",
+        "thumbnail": "/static/images/cat02.jpg"
+    },
+    {
+        "id": 3,
+        "title": "颈间诱惑",
+        "thumbnail": "/static/images/cat03.jpg"
+    },
+    {
+        "id": 4,
+        "title": "腕间之美",
+        "thumbnail": "/static/images/cat04.jpg"
+    },
+    {
+        "id": 5,
+        "title": "指尖浪漫",
+        "thumbnail": "/static/images/cat05.jpg"
+    },
+    {
+        "id": 6,
+        "title": "耳畔时尚",
+        "thumbnail": "/static/images/cat06.jpg"
+    },
+    {
+        "id": 7,
+        "title": "配饰街拍",
+        "thumbnail": "/static/images/cat07.jpg"
+    },
+    {
+        "id": 8,
+        "title": "影视搭配",
+        "thumbnail": "/static/images/cat08.jpg"
+    },
+    {
+        "id": 9,
+        "title": "珠宝设计",
+        "thumbnail": "/static/images/cat09.jpg"
+    }
+]

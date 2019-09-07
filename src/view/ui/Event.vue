@@ -5,7 +5,7 @@
     <div class="account">
       <div class="user-head">
         <router-link :to="'/user/' + item.user.userID">
-        <img :src="baseUrl + item.user.userHead">
+        <img :src="item.user.userHead">
         </router-link>
       </div>
       <span>{{ item.user.userName }}</span>
@@ -47,7 +47,6 @@ export default {
   },
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL
     }
   }
 }

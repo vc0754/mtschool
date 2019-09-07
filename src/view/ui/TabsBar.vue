@@ -36,7 +36,7 @@ export default {
 .toolbar {
   font-size: 12px;
   color: #777;
-  background-color: #f7f7f8;
+  background-color: #fff;
   height: 50px;
   width: 100%;
   border-top: solid 1px #ddd;

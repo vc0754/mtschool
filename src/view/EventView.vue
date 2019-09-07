@@ -43,7 +43,7 @@ export default {
           $state.complete()
         }
       }).catch((error) => {
-        console.log(error)
+        window.console.log(error)
       })
     }
   },

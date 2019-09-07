@@ -6,7 +6,7 @@
 
   <swiper v-if="swiperSlides.length" :options="swiperOption">
     <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-      <img :src="baseUrl + slide.thumbnail" :alt="slide.title">
+      <img :src="slide.thumbnail" :alt="slide.title">
       <router-link to="/minisite/" class="swiperlink">微官网</router-link>
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
@@ -107,7 +107,6 @@ export default {
   },
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL,
       swiperSlides: [],
       swiperOption: {
         observer: true,
@@ -124,7 +123,7 @@ export default {
       .then((response) => {
         this.swiperSlides = response.data
       }).catch((error) => {
-        console.log(error)
+        window.console.log(error)
       })
   }
 }

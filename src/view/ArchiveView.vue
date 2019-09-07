@@ -6,7 +6,7 @@
 
   <swiper v-if="swiperSlides.length" :options="swiperOption">
     <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-      <img :src="baseUrl + slide.thumbnail" :alt="slide.title">
+      <img :src="slide.thumbnail" :alt="slide.title">
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
@@ -41,7 +41,7 @@
   <ul class="ui-list">
     <li v-for="(article, index) in items" :key="index">
       <router-link :to="'/article/' + article.id">
-        <div class="thumb"><img :src="baseUrl + article.thumbnail" alt=""></div>
+        <div class="thumb"><img :src="article.thumbnail" alt=""></div>
         <div class="info">
           <h3>{{ article.title }}</h3>
           <div class="meta">
@@ -88,13 +88,12 @@ export default {
           $state.complete()
         }
       }).catch((error) => {
-        console.log(error)
+        window.console.log(error)
       })
     }
   },
   data () {
     return {
-      baseUrl: this.$http.defaults.baseURL,
       items: [],
       swiperSlides: [],
       swiperOption: {
@@ -112,7 +111,7 @@ export default {
       .then((response) => {
         this.swiperSlides = response.data
       }).catch((error) => {
-        console.log(error)
+        window.console.log(error)
       })
   }
 }
